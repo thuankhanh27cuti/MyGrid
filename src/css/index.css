@@ -1,0 +1,70 @@
+.ratio-9x16 {
+    --bs-aspect-ratio: calc(1600% / 9);
+}
+
+.ratio-9x21 {
+    --bs-aspect-ratio: calc(2100% / 9);
+}
+
+.border-radius-50 {
+    border-radius: 50% !important;
+}
+
+.glass-effect {
+    backdrop-filter: blur(32px);
+}
+
+body {
+    min-height: 100vh;
+}
+
+h1 {
+    background-image: linear-gradient(90deg, #ba371c, #635493);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.card {
+    overflow: hidden !important;
+    box-shadow: var(--bs-box-shadow) !important;
+    border: none !important;
+}
+
+#card-hover-effect > div:first-child > img {
+    transition: 0.25s;
+}
+
+#card-hover-effect:hover > div:first-child > img {
+    transform: scale(1.05);
+}
+
+#card-hover-effect > div:nth-child(2) {
+    opacity: 0;
+    transition: 0.25s;
+}
+
+#card-hover-effect:hover > div:nth-child(2) {
+    opacity: .5;
+}
+
+#card-hover-effect > div:nth-child(3) > p {
+    opacity: 0;
+    transition: 0.25s;
+}
+
+#card-hover-effect:hover > div:nth-child(3) > p {
+    opacity: 1;
+}
+
+#social-media-container {
+    border-radius: var(--bs-card-border-radius);
+}
+
+#social-media-container > a > svg {
+    font-size: 2rem;
+}
+
+#transparent-gradient-card {
+    background: linear-gradient(0deg, rgb(var(--bs-black-rgb)), transparent);
+}
